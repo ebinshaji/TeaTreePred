@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    background-color: #6dc066;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.item {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    min-width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
