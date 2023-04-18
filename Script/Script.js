@@ -2,7 +2,7 @@ window.addEventListener('scroll', function() {
     const header = document.querySelector('.header');
     const scrollPosition = window.scrollY;
   
-    if (scrollPosition > 800) {
+    if (scrollPosition > 600) {
       header.classList.add('solid');
       header.classList.remove('transparent');
     } else {
