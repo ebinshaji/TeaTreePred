@@ -19,4 +19,62 @@ window.addEventListener('scroll', function() {
       loop: true
     });
   });
-  
+//image upload
+/*
+Dropzone.options.myAwesomeDropzone = {
+  paramName: "file", // The name that will be used to transfer the file
+  maxFilesize: 10, // MB
+  maxFiles :6, //maxfiles to be uploaded
+  acceptedFiles: ".jpeg,.jpg,.png,.gif", //allow file type
+
+  autoProcessQueue: false, // Prevents Dropzone from uploading dropped file immediately
+
+
+  init: function() {
+      var confirmButton = document.querySelector("#confirm-all");
+      var cancelButton = document.querySelector("#cancel-all");
+
+      myDropzone = this; // closure
+
+      //if user click Confirm
+      confirmButton.addEventListener("click", function() {
+          document.getElementsByClassName("dz-progress")[0].style.display = "block"; //show progress bar
+          myDropzone.processQueue(); // Tell Dropzone to process the queued file.
+
+          //hide buttons again
+          document.getElementById("upload-confirmation").style.display = "none";
+
+      });
+
+      //if user click Cancel
+      cancelButton.addEventListener("click", function() {
+          myDropzone.removeAllFiles(true);// Tell Dropzone to cancel the queued file.
+
+          //hide button again
+          document.getElementById("upload-confirmation").style.display = "none";
+      });
+
+
+      // You might want to show the submit button only when
+      // files are dropped here:
+      this.on("addedfile", function() {
+          // Show confirm or cancel button
+          document.getElementById("upload-confirmation").style.display = "block";
+
+          //hide progress bar temporarily
+          document.getElementsByClassName("dz-progress")[0].style.display = "none";
+      });
+
+      //on success get the server response here
+      this.on("success", function(file, serverResponse) {
+          upload_response = JSON.parse(serverResponse);
+
+          //show status to user
+          document.getElementById("status").innerHTML = upload_response.status;
+
+          //show image url to user
+          document.getElementById("image-url").innerHTML = upload_response.image_url;
+      });
+  }
+};
+*/

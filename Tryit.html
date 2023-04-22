@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="Style/Style3.css">
     <script src="Script/Script.js"></script>
     <script src="Script/typed.umd.js"></script>
-</head>
+ </head>
 <body>
 <!-- Header-->
 <header class="header">
@@ -30,8 +30,43 @@
 
 <!-- Items section -->
 <div class="container">
-  <h2>Try it yourself</h2><br>
   <p>Upload Your images</p>
+
+
+<!--image upload-->
+
+
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <input id="imgupload" type="file" accept="image/png, image/jpeg">
+    </div>
+    <div>
+      <button>Submit</button>
+    </div>
+  </form>
+  
+
+
+
+<!--   
+        <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+    <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
+
+<form action="upload.php" class="dropzone" id="my-awesome-dropzone">
+</form>
+
+<div id="upload-confirmation" style="display: none;">
+    <button id="confirm-all">Confirm</button>
+    <button id="cancel-all">Cancel</button>
+</div>
+<div id="status">
+</div>
+<div id="image-url">
+</div>
+-->
+
+
+
 </div>
 
 <!--footer-->
