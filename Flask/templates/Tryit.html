@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea Leaves disease prediction</title>
-    <link rel="stylesheet" type="text/css" href="Style/Style2.css">
-    <link rel="stylesheet" type="text/css" href="Style/Style3.css">
-    <script src="Script/Script.js"></script>
-    <script src="Script/typed.umd.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/Style/Style2.css">
+    <link rel="stylesheet" type="text/css" href="/static/Style/Style3.css">
  </head>
 <body>
 <!-- Header-->
@@ -20,9 +18,9 @@
       <input type="checkbox" id="menu-toggle">
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <ul class="menu">
-        <li><a href="./Index.html">Home</a></li>
-        <li><a href="./About.html">About</a></li>
-        <li><a href="./Tryit.html">Try</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Tryit">Try</a></li>
       </ul>
     </nav>
   </header>
@@ -35,16 +33,15 @@
 
 <!--image upload-->
 
-
-<form method="post" enctype="multipart/form-data">
+<form method="POST" enctype="multipart/form-data">
     <div>
-        <input id="imgupload" type="file" accept="image/png, image/jpeg">
+        <input id="imgupload" type="file" name="image" accept="image/png, image/jpeg">
     </div>
     <div>
-      <button>Submit</button>
+        <button>Submit</button>
     </div>
-  </form>
-  
+</form>
+<p>The predicted result is: {{ prediction }}</p>
 
 
 
