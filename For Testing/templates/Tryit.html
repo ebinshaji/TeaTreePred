@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Leaves disease prediction</title>
+    <link rel="stylesheet" type="text/css" href="/static/Style/Style2.css">
+    <link rel="stylesheet" type="text/css" href="/static/Style/Style3.css">
+ </head>
+<body>
+<!-- Header-->
+<header class="header">
+    <nav>
+      <div class="logo">
+        <a href="index.html" style="text-shadow: 2px 2px 4px #00000085;">TeaScan</a>
+      </div>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Tryit">Try</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+<!-- Items section -->
+<div class="container">
+  <p>Upload Your images</p>
+
+
+<!--image upload-->
+
+<form method="POST" enctype="multipart/form-data">
+    <div>
+        <input id="imgupload" type="file" name="image" accept="image/png, image/jpeg">
+    </div>
+    <div>
+        <button>Submit</button>
+    </div>
+</form>
+<p>The predicted result is: {{ prediction }}</p>
+
+
+
+<!--   
+        <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+    <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
+
+<form action="upload.php" class="dropzone" id="my-awesome-dropzone">
+</form>
+
+<div id="upload-confirmation" style="display: none;">
+    <button id="confirm-all">Confirm</button>
+    <button id="cancel-all">Cancel</button>
+</div>
+<div id="status">
+</div>
+<div id="image-url">
+</div>
+-->
+
+
+
+</div>
+
+<!--footer-->
+<footer style="background-color: green; padding: 20px;">
+    <div class="foo_item">
+        <h3>Address:</h3>
+        <p>123 Main St, Anytown USA</p>
+        <p>Our office is located in downtown Anytown, USA. Come and visit us!</p>
+    </div>
+    <div class="foo_item"">
+        <h3>About:</h3>
+        <p>We made this project for IBM intern program having title Project Title: Deep Learning Model for Detecting diseases in Tea Leaves</p>
+    </div>
+    <div class="foo_item">
+        <h3>GitHub:</h3>
+        <p><a href="https://github.com/ebinshaji" target="_blank" style="color: #fff"><i class="fab fa-github"></i> Visit our GitHub page <br><br>github.com/ebinshaji</a></p>
+    </div>
+</footer>
+</body>
+</html>

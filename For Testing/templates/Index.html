@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Leaves disease prediction</title>
+    <link rel="stylesheet" type="text/css" href="/static/Style/Style.css">
+    <script src="/static/Script/Script.js"></script>
+    <script src="/static/Script/typed.umd.js"></script>
+</head>
+<body>
+<!-- Header-->
+<header class="header">
+    <nav>
+      <div class="logo">
+        <a href="index.html" style="text-shadow: 2px 2px 4px #00000085;">TeaScan</a>
+      </div>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/About">About</a></li>
+        <li><a href="/Tryit">Try</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+<!-- Content section -->
+<div class="content">
+    <div class="descriptions">
+        <h1 style="text-shadow: 2px 2px 4px #00000085;">Tea leaves disease</h1>
+        <div class="typing">
+            <span class="text" style="white-space: pre; text-shadow: 2px 2px 4px #00000085;"></span>
+        </div>
+    </div>
+    <div class="right-child">
+        <img class="top_images" src="/static/image/back.jpg">
+    </div>
+</div>
+
+<!-- Items section -->
+<div class="container">
+    <div class="why_this_model">
+        <h1>Why this model</h1><br><br>
+        <P class="mainpara">Tea is an important economic crop. It contains a variety of effective ingredients required by the human body, has medical and health care functions, and is quite effective in enhancing human immunity. Planting tea is an important way for tea farmers to make their fortunes. Currently, China’s tea planting area and output are the highest in the world. However,because of the effects of many diseases, such as tea algae leaf spot (TALS), tea bud blight (TBB), tea white scab (TWS), and tea leaf blight (TLB), the annual tea production has been reduced by as much as 20%1. Tea leaf diseases can also reduce the quality of tea and cause serious economic losses to tea farmers. Accurate detection and identiication of tea leaf diseases and timely prevention and control measures are of great significance to reduce the loss of tea production, improve the quality of tea, and increase the income of tea farmers.<br><br>
+
+
+            Tea leaf diseases can be identified by observing the leaves condition like color and spots on the leaves. Strange spots & colors on the leaves may be an indication of disease. Experts and farmers can identify the type of disease by observing the leaves manually.<br><br>
+            
+            
+            At present, the diagnosis of tea leaf diseases relies on the manual method. Most tea trees grow in rugged mountainous areas. Thus, it is time-consuming and costly for experts to go to the tea garden for diagnosis. However, results are largely subjective when famers rely on their own experience to distinguish the types of tea diseases.<br><br>
+            
+            
+            To overcome the above problem we are building a model which is used for the prevention and early detection of tea leaves disease. Basically tea leaves disease diagnosis depends on the different characteristics like color, spots, texture etc. Here the person can capture the images of the tea leaves and then the image will be sent to the trained model. The model analyzes the image and detects whether the tea leaves are having any disease or not and its type.</P>
+            <br><br><br><br><br><h1>Models Employeed</h1>
+        </div>
+        <div class="item">
+            <h2>VGG16</h2>
+            <p>VGG16 is a convolutional neural network architecture used for image classification tasks. It was developed by Oxford University and is known for its deep architecture and high accuracy on image recognition benchmarks.</p>
+        </div>
+        <div class="item">
+            <h2>NumPy</h2>
+            <p>NumPy is a Python library that provides support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.</p>
+        </div>
+        <div class="item">
+            <h2>PyTorch</h2>
+            <p>PyTorch is an open-source machine learning library based on the Torch library. It is primarily used for developing deep learning models and offers a dynamic computational graph that allows for easy experimentation and debugging.</p>
+        </div>
+        <div class="item">
+            <h2>Torch<br>Vision</h2>
+            <p>Torchvision is a computer vision library in Python that is part of the PyTorch ecosystem. It provides a set of tools and datasets for building and training computer vision models.</p>
+        </div>
+   
+</div>
+
+<!--footer-->
+<footer style="background-color: green; padding: 20px;">
+    <div class="foo_item">
+        <h3>Address:</h3>
+        <p>123 Main St, Anytown USA</p>
+        <p>Our office is located in downtown Anytown, USA. Come and visit us!</p>
+    </div>
+    <div class="foo_item"">
+        <h3>About:</h3>
+        <p>We made this project for IBM intern program having title Project Title: Deep Learning Model for Detecting diseases in Tea Leaves</p>
+    </div>
+    <div class="foo_item">
+        <h3>GitHub:</h3>
+        <p><a href="https://github.com/ebinshaji" target="_blank" style="color: #fff"><i class="fab fa-github"></i> Visit our GitHub page <br><br>github.com/ebinshaji</a></p>
+    </div>
+</footer>
+</body>
+</html>
