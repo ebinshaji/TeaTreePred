@@ -1,14 +1,18 @@
-# IBM--13000-1682598224
+# Tea Tree Disease Detection system
 Deep Learning Model for Detecting diseases in Tea Leaves
+
+
+
+# try using google colb
+https://colab.research.google.com/drive/1jzU3rAgIM1YjYts2l6EwiZpjogrtcOP_?usp=sharing
+
+Steps
+Create an NGROK account and Provide your token to create a live page
+
+upload photo of any infected tea tree plant 
 
 # Download VGG16 Model from \n
 https://drive.google.com/file/d/1uQWpCNtRGUwOAL1Jq6-0Ulx4FwQEIbra/view?usp=sharing
 
-#if you want to test a live demo of this page 
-# try
-https://colab.research.google.com/drive/1jzU3rAgIM1YjYts2l6EwiZpjogrtcOP_?usp=sharing
 
-all the files used for this is given in for testing folder (this folder is created only for trying a live demo on colab )
-
-# files as per the project structure are present on given folders as Flask, Dataset and training Files
 
